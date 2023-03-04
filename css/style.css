@@ -1,0 +1,185 @@
+:root {
+    padding: 0;
+    margin: 0;
+    --primary-color: purple;
+    --secondary-color: red;
+    --green: rgb(4, 57, 4);
+    --h1--font: 3rem;
+    --h2--font: 1rem;
+    --h3--font: 2.2rem;
+    --p-font: 1.3rem;
+
+}
+
+body {
+    background-color: burlywood;
+
+}
+
+section {
+    padding: 200px 15% 90px;
+    background-image: url(https://res.cloudinary.com/dpaccount/image/upload/q_auto,f_auto/prod/drops/30-FC4B3F0E-1BB0-4BCE-99AA-6D31D4938B82/hero-bg_eiqgsm);
+    background-position: center;
+}
+
+.top{
+    color: rgb(83, 4, 4);
+    text-align: center;
+    margin-bottom: 70px;
+    font-family: 'Climate Crisis', sans-serif;
+    
+    
+}
+
+.h-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    mix-blend-mode: color-burn;
+    height: 300px;
+    width: 300px;
+}
+
+.sticky{
+    position: sticky !important;
+    top: 10px;
+    z-index: 1000;
+    background-color: rgb(250, 176, 85);
+}
+
+
+
+.nav-menu {
+    
+    border: 2px solid rgb(83, 4, 4);
+    border-radius: 5px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 50px;
+    padding:20px; 
+}
+
+
+
+.nav-item {
+    margin-inline: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: x-large;
+    color: rgb(83, 4, 4);
+}
+
+
+.main-text h1 {
+    font-size: var(--h1--font);
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.main-text h3 {
+    font-size: var(--h3--font);
+    color: var(--primary-color);
+    text-align: center;
+    margin-left: 200px;
+}
+
+.main-content {
+    display: flex;
+    text-align: left;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.box {
+    margin: 20px;
+    background-color: burlywood;
+    border: 10px solid blanchedalmond;
+    border-radius: 5px;
+
+}
+
+.box:hover {
+    box-shadow: 5px 5px 8px blanchedalmond
+}
+
+
+.box img {
+    border: 5px solid var(--green);
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    width: 250px;
+}
+
+
+.box h3 {
+    font-size: var(--h3--font);
+
+}
+
+.box h2 {
+    font-size: var(--h2--font);
+    border: 5px solid transparent;
+    border-radius: 5px;
+    background-color: coral;
+    font-weight: 800;
+}
+
+.box h2:hover {
+    background-color: rgb(252, 97, 41);
+}
+
+
+.box h2,
+h3 {
+    color: var(--green);
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+}
+
+.box p {
+    font-size: var(--p-font);
+    margin: 10px;
+    padding: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 400px){
+    :root {
+        --h1-font: 4rem;
+        --h2-font: 2.5rem;
+        --h5-font: 1.2rem;
+        --p-font: 0.8rem;
+    }
+}
+
+@media(min-width: 425px) and (max-width:768px){
+    .nav-menu a{
+        display: block;
+        margin: 1rem;
+        padding: 1rem;
+    }
+    :root{
+        --h1-font: 4.5rem;
+        --h2-font: 2.8rem;
+    }
+    section{
+        padding: 100px 15% 90px;
+    }
+}
+
+@media (min-width:768) and (max-width:1440){
+    section{
+        padding: 120px 15% 90px;
+    }
+    :root{
+        --h1-font:2rem;
+        --h2-font:2rem;
+    }
+}
